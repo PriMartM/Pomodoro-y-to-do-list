@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Amoroso 💚</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chewy&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container" id="bienvenida">
+    <h1>Bienvenido💚</h1>
+    <p>¡Vamos a estudiar juntos con la técnica Pomodoro!</p>
+    <p>Hoy es un buen día para creer en vos y en todo lo que podés lograr</p>
+    <img src="osito.png" alt="osito tierno" width="200" />
+    <br />
+    <button onclick="mostrarSeccion('pomodoro')">Comenzar</button>
+  </div>
+
+  <div class="container" id="pomodoro" style="display:none">
+    <h2>Sesión de Estudio</h2>
+    <p>Tu mente es poderosa, tu esfuerzo vale oro. Estás construyendo tu futuro, un minuto a la vez✨🧠</p>
+    <img src="chicaestudiando.png" alt="Chica estudiando" width="200" />
+    <h1 id="temporizador">25:00</h1>
+    <button onclick="iniciarTemporizador()">Iniciar</button>
+    <button onclick="pausarTemporizador()">Pausar</button>
+    <button onclick="reiniciarTemporizador()">Reiniciar</button>
+    <br/>
+    <button onclick="mostrarSeccion('descanso')">Descanso</button>
+    <button onclick="mostrarSeccion('tareas')">Ir a tareas</button>
+  </div>
+
+  <div class="container" id="descanso" style="display:none">
+    <h2>Tiempo de descanso</h2>
+    <p>Respirá profundo... el descanso también es parte del éxito. Relajate, te lo ganaste🍵🌸</p>
+    <img src="chicadurmiendo.png" alt="chica descansando" width="200" />
+    <h1 id="temporizadorDescanso">05:00</h1>
+    <button onclick="iniciarDescanso()">Iniciar</button>
+    <button onclick="pausarDescanso()">Pausar</button>
+    <button onclick="reiniciarDescanso()">Reiniciar</button>
+    <br/>
+    <button onclick="mostrarSeccion('pomodoro')">Volver a estudiar</button>
+  </div>
+
+  <div class="container" id="tareas" style="display:none">
+    <h2>Mis tareas</h2>
+    <img src="chicatomandonotas.png" alt="chica tomando notas" width="200" />
+    <input type="text" id="nueva-tarea" placeholder="Escribí tu tarea" />
+    <br/>
+    <button onclick="agregarTarea()">Agregar</button>
+    <button onclick="eliminarTodas()">Eliminar todas</button>
+    <ul id="lista-tareas"></ul>
+    <br/>
+    <button onclick="mostrarSeccion('pomodoro')">Volver</button>
+  </div>
+
+  <!-- 🎵 Elementos de audio -->
+  <audio id="musicaEstudio" loop>
+    <source src="CozyJazz.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="musicaDescanso" loop>
+    <source src="LofiRelax.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="alarma">
+    <source src="alarma.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

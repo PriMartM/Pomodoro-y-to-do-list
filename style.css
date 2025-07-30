@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chewy&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  background: linear-gradient(135deg, #d8f3dc, #b7e4c7, #95d5b2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Chewy', cursive;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: #7cbf94;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5da87a;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  background-color: #e9f5ee;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#lista-tareas {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#lista-tareas li {
+  background-color: #b7e4c7;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+#lista-tareas input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.eliminar-btn {
+  background-color: #f28482;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 80%;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+        gap: 40px; 
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: auto;
+    }
+}
+
+   .proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+ .proyecto {
+    background-color: var(--color-hover);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+ }
+
+ .proyecto img, .proyecto video {
+    max-width: 100%;
+    border-radius: 8px;
+ }
+
+ .proyecto h2 {
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    color: var(--color-terciaria);
+ }
+
+ .proyecto p {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+} 
+
+ .proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid var(--color-terciaria);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+ }
+
+ .proyecto a:hover {
+    background-color: var(--color-terciaria);
+    color: var(--color-primaria);
+ }
