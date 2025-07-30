@@ -1,7 +1,7 @@
 # 💚 Pomodoro Amoroso
 
 **Pomodoro Amoroso** es una aplicación de temporizador Pomodoro personalizada y tierna, diseñada para ayudarte a estudiar con música relajante, mensajes motivadores y una interfaz amigable. Desarrollada con HTML, CSS y JavaScript puro, sin frameworks.
-
+![Dibujo de chica saludando](chicasaludando.png) 
 ---
 
 ## 🌟 Funcionalidades
