@@ -18,7 +18,10 @@
 
 ## 📸 Vista previa
 
-![Vista previa](preview.png) 
+![Vista previa](pantalla1.png) 
+![Vista previa](pantalla2.png) 
+![Vista previa](pantalla3.png) 
+![Vista previa](pantalla4.png) 
 
 ---
 
